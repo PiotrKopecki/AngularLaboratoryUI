@@ -1,0 +1,52 @@
+@import 'src/stylesapp/variables.scss';
+
+.main{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: darkgrey;
+}
+
+.main p{
+    margin-top: 1vh;
+    font-size: 200%;
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+
+form label{
+    font-size: 125%;
+    font-weight: bold;
+    margin: 2vh;
+    display: block;
+}
+
+form input{
+    font-size: 125%;
+    box-shadow: 0 0 0.25vh black;
+    margin-bottom: 3vh;
+}
+
+.buttons button{
+    width: 6vw;
+    margin: 1vw;
+    color: $text;
+    background-color: black;
+    box-shadow: 0 0 0.5vh black;
+    text-align: center;
+}
+
+.buttons button:hover{
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+}
+
+button:disabled{
+    background-color: rgb(212, 109, 109) !important;
+}
+
+

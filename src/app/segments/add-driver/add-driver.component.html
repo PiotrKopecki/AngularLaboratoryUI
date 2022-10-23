@@ -1,0 +1,15 @@
+<div class="main">
+    <p>Add/Edit Driver</p>
+    <form [formGroup]="form">
+        <label for="name">Name </label>
+        <input type="text" autocomplete="off" maxLength="50" placeholder="name" formControlName="name">
+        <label for="age">Age </label>
+        <input type="number" autocomplete="off" maxLength="50" placeholder="age" formControlName="age">
+        <label for="companyName">Company Name </label>
+        <input type="text" autocomplete="off" maxLength="50" placeholder="company name" formControlName="companyName">
+    <div class="buttons">
+        <button mat-raised-button (click)="onSubmit()" [disabled]="!form.valid">Add</button>
+        <button mat-raised-button (click)="close()">Cancel</button>
+    </div>
+    </form>
+</div>

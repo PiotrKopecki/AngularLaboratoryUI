@@ -1,0 +1,13 @@
+<div class="main">
+    <p>Add/Edit Company</p>
+    <form [formGroup]="form">
+        <label for="name">Name </label>
+        <input type="text" autocomplete="off" maxLength="50" placeholder="name" formControlName="name">
+        <label for="numberOfTrucks">Number Of Trucks </label>
+        <input type="number" autocomplete="off" maxLength="50" placeholder="number" formControlName="numberOfTrucks">
+    <div class="buttons">
+        <button mat-raised-button (click)="onSubmit()" [disabled]="!form.valid">Add</button>
+        <button mat-raised-button (click)="close()">Cancel</button>
+    </div>
+    </form>
+</div>

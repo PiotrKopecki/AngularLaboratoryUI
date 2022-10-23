@@ -1,0 +1,35 @@
+@import 'src/stylesapp/variables.scss';
+
+.rectangles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.rectangles a{
+    width: 25%;
+    height: 25%;
+    margin: 2%;
+    display: inline-block;
+    background-color: $gray;
+    text-decoration: none;
+    box-shadow: 0 0 0.25vh black;
+}
+
+.rectangles a:hover{
+    background-color: $red;
+    transform: scale(1.2);
+    transition: 0.2s ease-in-out;
+}
+
+.rectangles a p {
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vh;
+    color: $text;
+}
+
+

@@ -1,0 +1,96 @@
+@import 'src/stylesapp/variables.scss';
+
+$header_height: 9%;
+
+#header {
+    width: 100%;
+    height: $header_height;
+}
+
+.root-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+    justify-content: center;
+    height: 98%;
+    width: 90%;
+}
+
+.table-container {
+    top: $header_height;
+    height: 100%;
+    overflow: auto;
+    padding-left: 2%;
+}
+
+.mat-table {
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19);
+}
+
+.mat-row.cdk-row {
+    background-color: white;
+    padding: 5;
+}
+
+.mat-cell {
+    color: black;
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+.mat-header-cell {
+    font-size: 16
+}
+
+.mat-paginator-sticky {
+    bottom: 0;
+    position: sticky;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19);
+}
+
+.mat-column-content {
+    width: 40%;
+}
+
+.mat-column-date,
+.mat-column-status {
+    width: 20%;
+}
+
+.mat-column-id,
+.mat-column-type {
+    width: 10%;
+}
+
+tr.point-record:hover {
+    cursor: pointer;
+    background: rgb(212, 109, 109);
+}
+
+#deleteButton {
+    width: 5%;
+    position: absolute;
+    right: 15%;
+}
+
+#detailsButton {
+    width: 5%;
+    position: absolute;
+    right: 12%;
+}
+
+#addButton {
+    width: 5%;
+    position: absolute;
+    right: 9%;
+}
+
+#addButton2:hover{
+    transition: ease-in-out 0.2s;
+    transform: scale(1.25);
+}

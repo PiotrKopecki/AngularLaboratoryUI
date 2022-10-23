@@ -1,0 +1,142 @@
+@import 'src/stylesapp/variables.scss';
+$header_height: 9%;
+
+#main {
+    margin: 1rem;
+    padding: 2rem 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+#heads {
+    height: 50px;
+    padding: 0 4%;
+}
+
+#groups {
+    width: 30%;
+    height: 90%;
+}
+
+#members {
+    width: 60%;
+    height: 90%;
+}
+
+.sortable tr {
+    cursor: pointer;
+}
+
+tr.group-row:hover {
+    background: rgb(212, 109, 109);
+    cursor: pointer;
+}
+
+tr.selected {
+    background: red;
+    font-weight: bold;
+}
+
+.mat-row.cdk-row {
+    background-color: white;
+    padding: 5
+}
+
+.mat-cell {
+    color: black;
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+.mat-table {
+    width: 100%;
+}
+
+.mat-header-cell {
+    font-size: 16;
+}
+
+.mat-raised-button {
+    background-color: #ff5500;
+    padding: 0 10px;
+    margin: 10px;
+    margin-left: 2%;
+    width: 0px;
+}
+
+.mat-paginator-sticky {
+    bottom: 0;
+    position: sticky;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19);
+}
+
+.mat-column-group-name {
+    width: 40%;
+}
+
+.mat-column-surname,
+.mat-column-name {
+    width: 20%;
+}
+
+.mat-column-id {
+    width: 10%;
+}
+
+.mat-column-email {
+    width: 100%;
+}
+
+.members-table-container,
+.group-table-container {
+    overflow: auto;
+    max-height: calc(100% - 60px);
+    padding-left: 4%;
+}
+
+.members-table-container {
+    width: 100%;
+    padding-left: 2%;
+    overflow-x: hidden;
+}
+
+.table-shadow {
+    height: 2px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.70);
+    margin: 0 3%;
+}
+
+#addGroup {
+    text-align: right;
+}
+
+#addGroup .mat-raised-button {
+    width: max-content;
+    color: darkgrey;
+}
+
+#addGroup .mat-raised-button:hover {
+    transform: scale(1.2);
+    transition: 0.2s ease-in-out;
+}
+
+#delete-button {
+    width: 5%;
+}
+
+.in-line {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.deleteButton {
+    margin-left: 25%;
+}

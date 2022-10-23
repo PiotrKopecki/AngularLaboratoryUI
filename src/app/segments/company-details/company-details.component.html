@@ -1,0 +1,50 @@
+<div id="main">
+    <div id="groups">
+      <div class="group-table-container">
+        <table mat-table [dataSource]="companiesList" class="mat-elevation-z8">
+  
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+          
+          <ng-container matColumnDef="numberOfTrucks">
+            <th mat-header-cell *matHeaderCellDef> Number Of Trucks </th>
+            <td mat-cell *matCellDef="let element">&nbsp;&nbsp;&nbsp;{{element.numberOfTrucks}} </td>
+          </ng-container>
+
+          <tr mat-row [class.selected]="currentCompany == row.name" [class.group-row]="currentCompany != row.name" (click)="getDrivers(row.name);
+          " *matRowDef="let row; columns: companiesColumns; let index = index;">
+          </tr>
+          <tr mat-header-row *matHeaderRowDef="companiesColumns; sticky:true"></tr>
+        </table>
+      </div>
+      <div class="table-shadow"></div>
+    </div>
+    <div id="members">
+      <div id="heads">
+        <h2 style="float: left;">Drivers</h2>
+      </div>
+      <div class="members-table-container">
+        <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+          <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> ID </th>
+            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+          </ng-container>
+  
+          <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+          </ng-container>
+          
+          <ng-container matColumnDef="age">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header> Age </th>
+            <td mat-cell *matCellDef="let element"> {{element.age}} 
+            <button mat-icon-button color="warn" class="deleteButton" (click)="deleteDriver(element.name)"><mat-icon>delete</mat-icon></button></td>
+          </ng-container>
+
+          <tr mat-header-row *matHeaderRowDef="membersColumns; sticky:true"></tr>
+          <tr mat-row *matRowDef="let row; columns: membersColumns;"></tr>
+        </table>
+      </div>
+    </div>

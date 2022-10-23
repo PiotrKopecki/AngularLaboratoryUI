@@ -1,0 +1,17 @@
+@import 'src/stylesapp/variables.scss';
+
+.footer{
+    background-color: $gray;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+}
+#footerText{
+    color: $text;
+    display: flex;
+    justify-content: center;
+    height: 4vh;
+    margin-top: 1.5vh;
+    font-size: 200%;
+}

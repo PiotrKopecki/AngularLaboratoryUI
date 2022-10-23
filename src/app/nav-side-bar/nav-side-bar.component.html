@@ -1,0 +1,11 @@
+<div class="menuIcon" [class.menuIconClass]="iconVariable" (click)="openCloseMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<div class="navbarContainter" [class.menuClass]="menuVariable">
+    <a href="/home"><p>HOME</p></a>
+    <a href="/companies"><p>Companies</p></a>
+    <a href="/drivers"><p>Drivers</p></a>
+    <a (click)="logout()"><p>LOG OUT</p></a>
+</div>

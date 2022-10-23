@@ -1,0 +1,28 @@
+
+.content{
+    right: 0;
+    left: 0;
+    top: 5%;
+    bottom: 5%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    font-size: 5vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    text-align: center;
+  }
+
+.googleButton{
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    right: 50%;
+    width: 150%;
+}

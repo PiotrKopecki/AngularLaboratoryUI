@@ -1,0 +1,80 @@
+@import 'src/stylesapp/variables.scss';
+
+.navbarContainter{
+    height: 90%;
+    top: 5%;
+    width: 24%;
+    background-color: $gray;
+    left: -24%;
+    position: fixed;
+    z-index: 1;
+    box-shadow: 0 0 0.25vh black;
+}
+
+.navbarContainter a{
+    display: block;
+    text-align: center;
+    margin-top: 10%;
+    background-color: darkgrey;
+    font-size: 3.5vh;
+    height: 6vh;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 0.25vh black;
+}
+
+.navbarContainter a:hover{
+    color: $red;
+    font-weight: bolder;
+}
+
+.navbarContainter a p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.icon{
+    vertical-align: middle;
+}
+
+.menuIcon{
+    position: fixed;
+    left: 3%;
+    top: 1.3vh;
+}
+
+.menuIcon span{
+    background-color: $text;
+    display: block;
+    width: 5vh;
+    height: 0.6vh;
+    transition: 0.2s ease-in-out;
+}
+
+.menuIcon span:nth-child(2){
+    margin-top: 0.30vh;
+    margin-bottom: 0.30vh;
+}
+
+.menuIconClass span:nth-child(1){
+    transform: rotate(40deg);
+    margin-top: 1vh;
+}
+
+.menuIconClass span:nth-child(3){
+     transform: rotate(-40deg);
+     margin-top: -0.5vh;
+}
+
+.menuIconClass span:nth-child(2){
+    display: none;
+}
+
+.menuClass{
+    left: 0;
+    transition: 0.4s ease-in-out;
+}
+
+
