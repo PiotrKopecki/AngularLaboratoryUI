@@ -8,7 +8,7 @@
 ### Gateway is project for communication with those projects. It provides routing rules.
 
 
-#INSTALL
-#npm install
-#RUN
-#ng serve
+# INSTALL
+# npm install
+# RUN
+# ng serve
